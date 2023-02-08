@@ -1,4 +1,6 @@
 import React from 'react';
+import './Stories.css';
+
 import { useStories } from '../../hooks/useStories.js';
 
 import StoryCard from '../Story/StoryCard.js';
