@@ -1,8 +1,10 @@
 import './App.css';
-import { getStories } from './services/stories.js';
+import { useStories } from './hooks/useStories.js';
 
 function App() {
-  getStories();
+  const { stories } = useStories();
+
+  console.log('stories', stories);
   return <div className="App"></div>;
 }
 
