@@ -17,7 +17,6 @@ function App() {
           <Redirect to="/auth/sign-in" />
         </Route>
       </Switch>
-      <Stories />
     </div>
   );
 }

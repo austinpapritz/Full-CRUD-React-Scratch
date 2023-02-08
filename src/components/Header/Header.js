@@ -4,8 +4,8 @@ import './Header.css';
 
 export default function Header() {
   return (
-    <div>
+    <header>
       <button onClick={signOut}>Log out</button>
-    </div>
+    </header>
   );
 }
