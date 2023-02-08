@@ -29,7 +29,6 @@ export default function Auth() {
         <NavLink to="/auth/sign-up">Sign-up</NavLink>
       </div>
       <div className="email-container">
-        <label>Email</label>
         <input
           className="input"
           type="email"
