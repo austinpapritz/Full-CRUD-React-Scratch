@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { NavLink, useParams } from 'react-router-dom';
-import { useUser } from '../../context/PioneerContext.js';
+import { NavLink, Redirect, useParams } from 'react-router-dom';
+import { useUser } from '../../context/UserContext.js';
 import { authUser } from '../../services/auth.js';
 
 export default function Auth() {
@@ -10,7 +10,7 @@ export default function Auth() {
   const { type } = useParams();
 
   if (user) {
-    // return <Redirect to="/" />;
+    return <Redirect to="/entries" />;
   }
 
   const submitAuth = async () => {
