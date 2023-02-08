@@ -1,11 +1,16 @@
 import './App.css';
 import { useStories } from './hooks/useStories.js';
 
+import Stories from './components/Story/Stories.js';
+
 function App() {
   const { stories } = useStories();
 
-  console.log('stories', stories);
-  return <div className="App"></div>;
+  return (
+    <div className="App">
+      <Stories />
+    </div>
+  );
 }
 
 export default App;
