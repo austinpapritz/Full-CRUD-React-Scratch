@@ -1,14 +1,13 @@
 import React from 'react';
 import { useHistory } from 'react-router-dom';
+import StoryForm from './StoryForm.js';
 
 export default function NewStory() {
   const history = useHistory();
-  const handleSubmit = async (title, name, entry) => {
-    console.log('submit handle');
-  };
+  const handleSubmit = async (title, name, entry) => {};
   return (
     <>
-      <PostForm submitHandler={handleSubmit} />
+      <StoryForm submitHandler={handleSubmit} />
     </>
   );
 }
