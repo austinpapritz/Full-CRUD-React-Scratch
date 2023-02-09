@@ -7,7 +7,6 @@ import StoryCard from '../Story/StoryCard.js';
 
 export default function Stories() {
   const { stories } = useStories();
-  console.log('stories', stories);
 
   return (
     <div className="cards-container">
