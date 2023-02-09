@@ -3,6 +3,7 @@ import { getStories } from '../services/stories.js';
 
 export function useStories() {
   const [stories, setStories] = useState([]);
+  const [error, setError] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -10,11 +11,11 @@ export function useStories() {
         const data = await getStories();
         setStories(data);
       } catch (e) {
-        console.log('e', e);
+        setError(e.message);
       }
     };
     fetchData();
   }, []);
 
-  return { stories };
+  return { stories, error };
 }
