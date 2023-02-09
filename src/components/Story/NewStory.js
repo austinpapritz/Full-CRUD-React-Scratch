@@ -6,7 +6,12 @@ import StoryForm from './StoryForm.js';
 export default function NewStory() {
   const history = useHistory();
   const handleSubmit = async (title, name, entry) => {
-    await createNewStory(title, name, entry);
+    try {
+      await createNewStory(title, name, entry);
+      history.push('/entries');
+    } catch (e) {
+      console.error(e.message);
+    }
   };
   return (
     <>
