@@ -7,7 +7,7 @@ export default function StoryCard({ title, name, entry }) {
       <h3>
         {title} by {name}
       </h3>
-      <p>{entry}</p>
+      <p>{entry.slice(0, 120)}</p>
     </div>
   );
 }
