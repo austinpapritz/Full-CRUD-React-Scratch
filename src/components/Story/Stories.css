@@ -27,7 +27,7 @@ p {
 }
 
 .scroll-div p::after {
-  content: ' [. . .]';
-  font-size: 1.5rem;
+  content: ' [...]';
+  font-size: 1.2rem;
   line-height: 0;
 }
