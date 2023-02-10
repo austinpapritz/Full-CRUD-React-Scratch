@@ -56,8 +56,9 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 Next steps
 
-- Make auth
 - Allow users to click on a story to see more details
 - on a story's page, if user === user, show edit/delete component
 
-- home page shows cards that shows a snippet of the stories
+- refactor so home page shows snippet of stories and then click for a modal view of the story where the user can edit. On the top is the form for creating a new story.
+
+-
