@@ -1,0 +1,27 @@
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 50px;
+}
+
+.scroll-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url('../../../public/scroll-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: calc(300px * (720 / 900));
+}
+
+.scroll-div h3,
+p {
+  width: 70%;
+}
+
+.scroll-div h3 {
+  padding-top: 8%;
+}
