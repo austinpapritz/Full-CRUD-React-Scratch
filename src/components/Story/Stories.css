@@ -25,3 +25,7 @@ p {
 .scroll-div h3 {
   padding-top: 8%;
 }
+
+.dotdotdot::after {
+  content: '...';
+}
