@@ -26,6 +26,8 @@ p {
   padding-top: 8%;
 }
 
-.dotdotdot::after {
-  content: '...';
+.scroll-div p::after {
+  content: ' [. . .]';
+  font-size: 1.5rem;
+  line-height: 0;
 }
