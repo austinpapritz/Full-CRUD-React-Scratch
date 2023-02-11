@@ -1,5 +1,4 @@
 .App {
-  position: relative;
   text-align: center;
   background: url('../public/background.jpg');
   background-size: cover;
@@ -8,7 +7,7 @@
 
 .transparency {
   z-index: 100;
-  background: url('../public/mary.png');
+  background: url('../public/bandit.png');
   background-size: cover;
   height: 100vh;
 }
