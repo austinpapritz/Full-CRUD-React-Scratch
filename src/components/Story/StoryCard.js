@@ -9,15 +9,16 @@ export default function StoryCard({ user_id, id, title, name, entry }) {
 
   return (
     <div className="scroll-div">
-      <h3>
-        {title} by {name}
-      </h3>
-      <p>{entry}</p>
-      {owner && (
-        <>
-          <Link to={`/entries/edit/${id}`}>Edit</Link>
-        </>
-      )}
+      <div className="content-container">
+        <h3>{title}</h3>
+        <h3>by {name}</h3>
+        <p>{entry}</p>
+        {owner && (
+          <>
+            <Link to={`/entries/edit/${id}`}>Edit</Link>
+          </>
+        )}
+      </div>
     </div>
   );
 }
