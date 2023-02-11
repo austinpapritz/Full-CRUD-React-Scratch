@@ -14,7 +14,7 @@ function App() {
       <Header />
       <Switch>
         <Route exact path="/auth/:type" component={Auth} />
-        <Route exact path="/posts/edit/:id" component={EditStory} />
+        <Route exact path="/entries/edit/:id" component={EditStory} />
         <Route exact path="/entries" component={Stories} />
         <Route exact path="/entries/new" component={NewStory} />
         <Route path="*">
