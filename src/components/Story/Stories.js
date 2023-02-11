@@ -11,7 +11,7 @@ export default function Stories() {
   return (
     <div className="cards-container">
       {stories.map((story) => (
-        <StoryCard key={story.id} {...story} />
+        <StoryCard key={story.id} {...story} entry={story.entry.slice(0, 80)} />
       ))}
     </div>
   );
