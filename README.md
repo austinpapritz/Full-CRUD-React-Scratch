@@ -56,9 +56,8 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 Next steps
 
-- Allow users to click on a story to see more details
-- on a story's page, if user === user, show edit/delete component
-
-- refactor so home page shows snippet of stories and then click for a modal view of the story where the user can edit. On the top is the form for creating a new story.
-
--
+- delete feature
+- user can hover to highlight ppl and animals
+- clicking a person or animal brings up their story
+- user can add or edit stories
+- nav bar log in and log out, stories add edit
