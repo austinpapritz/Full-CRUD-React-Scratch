@@ -19,3 +19,10 @@ export async function updateStory(id, title, name, entry) {
   const resp = await client.from('stories').update({ title, name, entry }).match({ id });
   return checkError(resp);
 }
+
+export async function deleteStoryByID(id) {
+  console.log('id', id);
+  const resp = await client.from('stories').delete().match({ id }).single();
+  console.log('resp', resp);
+  return checkError(resp);
+}
