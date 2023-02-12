@@ -11,19 +11,18 @@ import EditStory from './components/Story/EditStory.js';
 function App() {
   return (
     <div className="App">
-      <div className="transparency">
-        <Header />
-        <Switch>
-          <Route exact path="/" />
-          <Route exact path="/auth/:type" component={Auth} />
-          <Route exact path="/entries/edit/:id" component={EditStory} />
-          <Route exact path="/entries" component={Stories} />
-          <Route exact path="/entries/new" component={NewStory} />
-          <Route path="*">
-            <Redirect to="/auth/sign-in" />
-          </Route>
-        </Switch>
-      </div>
+      <Header />
+      <img className="mary" src={process.env.PUBLIC_URL + '/mary-only.png'}></img>
+      <Switch>
+        <Route exact path="/" />
+        <Route exact path="/auth/:type" component={Auth} />
+        <Route exact path="/entries/edit/:id" component={EditStory} />
+        <Route exact path="/entries" component={Stories} />
+        <Route exact path="/entries/new" component={NewStory} />
+        <Route path="*">
+          <Redirect to="/auth/sign-in" />
+        </Route>
+      </Switch>
     </div>
   );
 }
