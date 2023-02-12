@@ -1,13 +1,19 @@
 .App {
+  position: relative;
   text-align: center;
   background: url('../public/background.jpg');
   background-size: cover;
   height: 100vh;
 }
 
-.transparency {
-  z-index: 100;
-  background: url('../public/bandit.png');
-  background-size: cover;
-  height: 100vh;
+.mary {
+  position: absolute;
+  height: 100px;
+  top: 700px;
+  left: 1233px;
+  opacity: 0;
+}
+
+.App img:hover {
+  opacity: 100%;
 }
