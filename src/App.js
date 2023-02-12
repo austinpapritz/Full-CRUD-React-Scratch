@@ -12,7 +12,8 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <img className="mary" src={process.env.PUBLIC_URL + '/mary-only.png'}></img>
+      <img className="mary" src={process.env.PUBLIC_URL + '/mary.png'}></img>
+      <img className="bandit" src={process.env.PUBLIC_URL + '/bandit.png'}></img>
       <Switch>
         <Route exact path="/" />
         <Route exact path="/auth/:type" component={Auth} />
