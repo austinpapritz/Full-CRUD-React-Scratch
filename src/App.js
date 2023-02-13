@@ -15,7 +15,9 @@ function App() {
       <img className="mary" src={process.env.PUBLIC_URL + '/mary.png'}></img>
       <img className="bandit" src={process.env.PUBLIC_URL + '/bandit.png'}></img>
       <Switch>
-        <Route exact path="/" />
+        <Route exact path="/">
+          <Header main={true} />
+        </Route>
         <Route exact path="/auth/:type" component={Auth} />
         <Route exact path="/entries/edit/:id" component={EditStory} />
         <Route exact path="/entries" component={Stories} />
