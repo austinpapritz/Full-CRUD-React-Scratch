@@ -56,8 +56,9 @@ If you work on more than one feature at a time, you are guaranteed to multiply y
 
 Next steps
 
+- nav bar log in and log out, stories add edit
+- clicking on character sets the name
 - user can hover to highlight ppl and animals
 - clicking a person or animal brings up their story
 - user can add or edit stories
 - if user wants to edit/add THEN go to Auth
-- nav bar log in and log out, stories add edit
