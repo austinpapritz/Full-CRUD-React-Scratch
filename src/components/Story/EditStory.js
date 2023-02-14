@@ -15,7 +15,7 @@ export default function EditStory() {
   const handleSubmit = async (title, name, entry) => {
     try {
       await updateStory(storyDetail.id, title, name, entry);
-      history.push('/entries');
+      history.push('/entries/pick-a-character');
     } catch (e) {
       setError(e.message);
     }
