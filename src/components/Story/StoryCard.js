@@ -22,14 +22,14 @@ export default function StoryCard({ user_id, id, title, name, entry }) {
           <div className="control">
             <ul>
               <li>
-                <Link to={`/entries/edit/${id}`}>Edit</Link>
+                <Link to={`/edit/${id}`}>Edit</Link>
               </li>
               <li
                 onClick={() => {
                   handleDelete(id);
                 }}
               >
-                <Link to={`/entries/delete/${id}`}>Delete</Link>
+                <Link to={`/delete/${id}`}>Delete</Link>
               </li>
             </ul>
           </div>
