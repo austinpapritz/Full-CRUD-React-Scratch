@@ -1,4 +1,5 @@
 import React from 'react';
+import './Stories.css';
 import { useHistory } from 'react-router-dom';
 import { createNewStory } from '../../services/stories.js';
 import StoryForm from './StoryForm.js';
@@ -14,8 +15,8 @@ export default function NewStory() {
     }
   };
   return (
-    <>
+    <div className="form-container">
       <StoryForm submitHandler={handleSubmit} />
-    </>
+    </div>
   );
 }
