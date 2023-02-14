@@ -1,13 +1,13 @@
 import React from 'react';
 import './Stories.css';
 
-import { useStories } from '../../hooks/useStories.js';
-
 import StoryCard from '../Story/StoryCard.js';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import { useStoriesByName } from '../../hooks/useStoriesByName.js';
 
 export default function Stories() {
-  const { stories } = useStories();
+  const { name } = useParams();
+  const { stories } = useStoriesByName(name);
 
   return (
     <>
