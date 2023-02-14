@@ -64,3 +64,4 @@ Next steps
 - clicking a person or animal brings up their story
 - user can add or edit stories
 - if user wants to edit/add THEN go to Auth
+- add unscrolling animation to scrolls
