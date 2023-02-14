@@ -1,6 +1,10 @@
+/* Form */
+
 .form-container {
   padding-top: 3.5%;
 }
+
+/* Story cards */
 
 .cards-container {
   padding-top: 18%;
@@ -53,4 +57,27 @@ p {
 }
 .scroll-div li {
   list-style-type: none;
+}
+
+/* Characters */
+/* make app absolute and characters sticky */
+
+.mary {
+  position: absolute;
+  height: 100px;
+  top: 700px;
+  left: 1233px;
+  opacity: 0;
+}
+
+.bandit {
+  position: absolute;
+  height: 100px;
+  top: 675px;
+  left: 450px;
+  opacity: 0;
+}
+
+.App img:hover {
+  opacity: 100%;
 }

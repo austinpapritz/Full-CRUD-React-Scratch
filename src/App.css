@@ -5,23 +5,3 @@
   background-size: cover;
   height: 100vh;
 }
-
-.mary {
-  position: absolute;
-  height: 100px;
-  top: 700px;
-  left: 1233px;
-  opacity: 0;
-}
-
-.bandit {
-  position: absolute;
-  height: 100px;
-  top: 675px;
-  left: 450px;
-  opacity: 0;
-}
-
-.App img:hover {
-  opacity: 100%;
-}
