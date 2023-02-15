@@ -25,7 +25,7 @@ function App() {
           <EditStory />
         </Route>
         <Route exact path="/entries/:name">
-          <Header stories={true} />
+          {/* <Header stories={true} /> */}
           <Stories />
         </Route>
         <Route exact path="/new">
