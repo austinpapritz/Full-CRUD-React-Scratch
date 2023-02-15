@@ -24,11 +24,11 @@ function App() {
           <EditStory />
         </Route>
         <Route exact path="/entries/:name">
-          {/* <Header stories={true} /> */}
+          <Header stories={true} />
           <Stories />
         </Route>
         <Route exact path="/new">
-          {/* <Header new={true} /> */}
+          <Header new={true} />
           <NewStory />
         </Route>
         <Route path="*">
