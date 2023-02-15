@@ -12,8 +12,9 @@ function App() {
   return (
     <div className="App">
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/entries/pick-a-character">
           <Header main={true} />
+          <Stories />
         </Route>
         <Route exact path="/auth/:type">
           <Header auth={true} />
@@ -32,7 +33,7 @@ function App() {
           <NewStory />
         </Route>
         <Route path="*">
-          <Redirect to="/auth/sign-in" />
+          <Redirect to="/entries/pick-a-character" />
         </Route>
       </Switch>
     </div>
