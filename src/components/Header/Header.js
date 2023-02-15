@@ -6,7 +6,10 @@ import './Header.css';
 export default function Header({ main, stories, name }) {
   const history = useHistory();
 
-  const nameCap = name.charAt(0).toUpperCase() + name.slice(1);
+  let nameCap;
+  if (name) {
+    nameCap = name.charAt(0).toUpperCase() + name.slice(1);
+  }
 
   return (
     <header>
