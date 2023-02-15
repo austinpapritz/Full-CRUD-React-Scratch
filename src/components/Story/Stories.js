@@ -4,6 +4,7 @@ import './Stories.css';
 import StoryCard from '../Story/StoryCard.js';
 import { Link, useParams } from 'react-router-dom';
 import { useStoriesByName } from '../../hooks/useStoriesByName.js';
+import Header from '../Header/Header.js';
 
 export default function Stories() {
   const { name } = useParams();
@@ -11,6 +12,7 @@ export default function Stories() {
 
   return (
     <>
+      <Header name={name} stories={true} />
       <Link to="/entries/mary">
         <img className="mary" src={process.env.PUBLIC_URL + '/mary.png'} />
       </Link>
