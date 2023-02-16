@@ -1,7 +1,6 @@
 import './App.css';
 import Stories from './components/Story/Stories.js';
 
-import Header from './components/Header/Header.js';
 import Auth from './components/Auth/Auth.js';
 import NewStory from './components/Story/NewStory.js';
 
@@ -13,22 +12,18 @@ function App() {
     <div className="App">
       <Switch>
         <Route exact path="/entries/pick-a-character">
-          <Header main={true} />
           <Stories />
         </Route>
         <Route exact path="/auth/:type">
-          <Header auth={true} />
           <Auth />
         </Route>
         <Route exact path="/edit/:id">
-          <Header edit={true} />
           <EditStory />
         </Route>
         <Route exact path="/entries/:name">
           <Stories />
         </Route>
         <Route exact path="/new">
-          <Header new={true} />
           <NewStory />
         </Route>
         <Route path="*">
