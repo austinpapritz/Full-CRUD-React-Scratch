@@ -81,3 +81,11 @@ p {
 .App img:hover {
   opacity: 100%;
 }
+
+.highlight {
+  opacity: 100%;
+}
+
+.nopacity {
+  opacity: 0%;
+}
