@@ -3,11 +3,20 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { UserProvider } from './context/UserContext.js';
+import { BrowserRouter } from 'react-router-dom';
+import { NameProvider } from './context/NameContext.js';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <NameProvider>
+      <UserProvider>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </UserProvider>
+    </NameProvider>
   </React.StrictMode>
 );
 

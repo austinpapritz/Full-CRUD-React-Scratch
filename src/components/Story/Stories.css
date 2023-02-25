@@ -1,0 +1,91 @@
+/* Form */
+
+.form-container {
+  padding-top: 3.5%;
+}
+
+/* Story cards */
+
+.cards-container {
+  padding-top: 18%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  gap: 50px;
+}
+
+.scroll-div {
+  background: url('../../../public/scroll-background.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 300px;
+  width: calc(300px * (720 / 900));
+}
+
+.content-container {
+  padding-top: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.scroll-div h3,
+p {
+  width: 70%;
+}
+
+.scroll-div h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.scroll-div p::after {
+  content: ' [...]';
+  font-size: 1.2rem;
+  line-height: 0;
+}
+
+.scroll-div ul {
+  padding-left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 15px;
+}
+.scroll-div li {
+  list-style-type: none;
+}
+
+/* Characters */
+/* make app absolute and characters sticky */
+
+.mary {
+  position: absolute;
+  height: 100px;
+  top: 700px;
+  left: 1233px;
+  opacity: 0;
+}
+
+.bandit {
+  position: absolute;
+  height: 100px;
+  top: 675px;
+  left: 450px;
+  opacity: 0;
+}
+
+.App img:hover {
+  opacity: 100%;
+}
+
+.highlight {
+  opacity: 100%;
+}
+
+.nopacity {
+  opacity: 0%;
+}
